@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+
   body {
     display: grid;
     height: 100vh;
@@ -24,6 +25,7 @@
     background: coral;
     height: 100%;
     padding: 1rem;
+    grid-column: 2 / 3;
   }
   
   aside {
