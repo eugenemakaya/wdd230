@@ -1,0 +1,99 @@
+// Define the font family for the body
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+// Import the necessary modules
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+// Define varibles for colors
+
+$primary-color: #333;
+$secondary-color: #fff;
+$background-color: #f7f7f7;
+$border-color: #ccc;
+$hover-color: #666;
+$active-color: #000;
+$font-color: #333;
+$accent-color: #ff0000;
+
+$font-family-body: 'Open Sans', sans-serif;
+$font-family-header: 'Roboto', sans-serif;
+
+
+// Define the font family for the body
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Define the font family for the header
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+// Define the font family for the main content
+
+main {
+    padding: 20px;
+}
+
+// Define the font family for the section
+
+section {
+    margin-bottom: 20px;
+}   
+
+// Define the font family for the footer
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+// Define the font family for the navbar
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin-right: 10px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+ 
+// This code defines the styles for the HTML elements on the page, 
+// including the font family, size, and color for the body, header, main content, section, footer, and navbar. 
+// It also sets the background color and padding for the header, footer, and navbar, and styles the links in the navbar. 
+// The code uses the Google Fonts API to import the 'Roboto' and 'Open Sans' fonts for use in the page.
