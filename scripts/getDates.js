@@ -1,3 +1,5 @@
+// Dynamiclly inject current year and date last modified in html
+
 // update year span element
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
