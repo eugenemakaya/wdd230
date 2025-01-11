@@ -1,0 +1,21 @@
+/* Media queries for bigger devices */
+
+@media (min-width: 640px) {
+
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+        
+    }
+
+
+}
