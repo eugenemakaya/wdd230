@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -22,9 +22,10 @@ body {
 
 /* header stuff */
 header div {
+  display: grid;
+  grid-template-rows: 80px 1fr;
   text-align: center;
   padding: 15px 0;
-  display: flex;
   background-color: #333;
   justify-content: center;
   align-content: center;
@@ -33,6 +34,7 @@ header div {
 }
 
 header img {
+  margin: 0 auto;
   width: auto;
   height: 130px;
 }
@@ -51,18 +53,19 @@ header h1 {
 header nav {
   display: flex;
   justify-content: space-around;
-  background-color: black;
-  padding: 10px 5px;
+  background-color: #353434;
+  color: #fff;
+  padding: 6px 0 6px 0;
 }
 
 header nav a {
-  font-size: 25px;
+  font-size: 1.5rem;
   text-decoration: none;
   color: var(--heading-color);
 }
 
 header nav a:hover {
-  font-size: 30px;
+  font-size: 1.7rem;
   color: #eeee;
   border-bottom: 1px solid #eee;
 }
@@ -130,15 +133,10 @@ h2 {
 
 /* footer */
 footer {
-  background-color: rgb(63, 1, 90);
   text-align: center;
   font-family: "Oswald", sans-serif;
-  font-size: medium;
-}
-
-footer p:first-of-type {
-  padding-top: 15px;
-  color: aliceblue;
+  font-size: 12px;
+  padding: 15px 0;
 }
 
 footer p:last-of-type {

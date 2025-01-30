@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   :root {
     --primary-color: rgb(63, 1, 90);
     --heading-color: #a59090ee;
