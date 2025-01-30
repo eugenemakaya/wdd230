@@ -1,201 +1,146 @@
+/* Larger View */
 /* Define the font family for the body */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --primary-color: rgb(63, 1, 90);
+  --heading-color: #c4a2a2ee;
+}
 
 /* Define the font family for the body */
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Define the font family for the header */
-
-/* hamburger */
-#menu {
-    display: block;
-    position: absolute;
-    top: 1px;
-    text-decoration: none;
-    right: 30px;
-}
-
-#menu::before {
-    content: "≡";
-    font-size: 3rem;
-    font-weight: 700;
-    padding-right: 0;
-    background-color: inherit;
-    color: var(--heading-color);
-}
-
-#menu.show::before {
-    content: "✖";
-    font-size: 2.5rem;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-span {
-    padding: 10px;
-    font-size: 25px;
-}
-
-/* Define the font family for the main content */
-
-main {
-    padding: 20px;
     background-color: #494949;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    margin: 20px 0;
-    color: #fff;
+/* header stuff */
+header div {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #333;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  color: #fff;
 }
 
-/* Define the font family for the section */
+header img {
+  margin: 0 auto;
+  width: auto;
+  height: 130px;
+}
+
+header h1 {
+  font-size: 45px;
+  color: var(--heading-color)
+}
+
+/* Hamburger */
+#menu {
+  display: none;
+}
+
+/* header nav */
+header nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #353434;
+  color: #fff;
+  padding: 6px 0 6px 0;
+}
+
+header nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--heading-color);
+}
+
+header nav a:hover {
+  font-size: 1.7rem;
+  color: #eeee;
+  border-bottom: 1px solid #eee;
+}
+
+header nav a:active {
+  color: orange;
+}
+
+.active::before {
+  content: "📍";
+}
+
+/* main */
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
 
 section {
-    margin-bottom: 20px;
-    border: 1px solid #a1a1a1;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 section li {
-    list-style: none;
-    color: #fff;
+  list-style: none;
+  color: #fff;
 }
 
 section a {
-    color: aquamarine;
+  color: aquamarine;
 }
 
 section p {
-    color: #fff;
+  color: #fff;
 }
 
-/* Define the font family for the footer */
+h2 {
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: aquamarine;
+  border-radius: 9px 9px 0 0;
+  text-align: center;
+  padding: 8px;
+  margin: 0;
+}
 
+.card {
+  border: 1px solid #a1a1a1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* footer */
 footer {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  padding: 15px 0;
+  color: #fff;
 }
 
-/* Define the font family for the navbar */
-
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 6px 0 6px 0;
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
 }
-
-nav.show {
-    display: block;
-    position: absolute;
-    /* top: 100px; */
-    width: 100%;
-}
-
-nav.show a {
-    display: block;
-    text-align: center;
-    padding-bottom: 1px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 6px 0 6px 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    /* padding: 6px 0 6px 0; */
-    display: block;
-    color: black;
-    background-color: aquamarine;
-}
-
-nav ul li:active {
-    color: black;
-    background-color: bisque;
-}
-
-
-    header {
-        font-size: 20px;
-        padding: 15px 0;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-weight: bolder;
-        background-color: aquamarine;
-        border-radius: 9px 9px 0 0;
-        text-align: center;
-        padding: 8px;
-        margin: 0;
-    }
-
-    .card {
-        border: 1px solid #a1a1a1;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    footer {
-        font-size: 12px;
-        padding: 15px 0;
-    }
-
-    #year {
-        font-size: 12px;
-    }
-
-    nav ul li {
-        display: block;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
