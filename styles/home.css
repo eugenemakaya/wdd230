@@ -5,7 +5,7 @@
 
 :root {
   --primary-color: rgb(63, 1, 90);
-  --heading-color: #a59090ee;
+  --heading-color: #c4a2a2ee;
 }
 
 /* Define the font family for the body */
@@ -41,7 +41,7 @@ header img {
 
 header h1 {
   font-size: 45px;
-  color: orange;
+  color: var(--heading-color)
 }
 
 /* Hamburger */
@@ -137,6 +137,7 @@ footer {
   font-family: "Oswald", sans-serif;
   font-size: 12px;
   padding: 15px 0;
+  color: #fff;
 }
 
 footer p:last-of-type {
