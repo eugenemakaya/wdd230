@@ -1,0 +1,147 @@
+/* Larger View */
+/* Define the font family for the body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --primary-color: rgb(63, 1, 90);
+  --heading-color: #a59090ee;
+}
+
+/* Define the font family for the body */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #494949;
+}
+
+/* header stuff */
+header div {
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  color: #fff;
+}
+
+header img {
+  width: auto;
+  height: 130px;
+}
+
+header h1 {
+  font-size: 45px;
+  color: orange;
+}
+
+/* Hamburger */
+#menu {
+  display: none;
+}
+
+/* header nav */
+header nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 10px 5px;
+}
+
+header nav a {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--heading-color);
+}
+
+header nav a:hover {
+  font-size: 30px;
+  color: #eeee;
+  border-bottom: 1px solid #eee;
+}
+
+header nav a:active {
+  color: orange;
+}
+
+.active::before {
+  content: "📍";
+}
+
+/* main */
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+section li {
+  list-style: none;
+  color: #fff;
+}
+
+section a {
+  color: aquamarine;
+}
+
+section p {
+  color: #fff;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: aquamarine;
+  border-radius: 9px 9px 0 0;
+  text-align: center;
+  padding: 8px;
+  margin: 0;
+}
+
+.card {
+  border: 1px solid #a1a1a1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: rgb(63, 1, 90);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: medium;
+}
+
+footer p:first-of-type {
+  padding-top: 15px;
+  color: aliceblue;
+}
+
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
+}
