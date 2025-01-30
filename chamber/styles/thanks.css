@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+#results {
+  background-color: #f4f1de;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e07a5f;
+  border-radius: 6px;
+}
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Collective Chammber of Commerce: Join Page</title>
+    <meta
+      name="description"
+      content="Chamber Join Page by Panashe Gonese"
+    />
+    <meta name="author" content="Panashe Gonese" />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Chamber Join Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://github.com/PurpleCre/wdd231/blob/main/chamber/images/hero.webp" />
+    <meta
+      property="og:url"
+      content="https://purplecre.github.io/wdd231/chamber/index.html"
+    />
+    <!-- *** Call to Action *** -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="The Collective Chammber of Commerce Join Page by Panashe Gonese"
+    />
+    <meta property="og:site_name" content="PurpleCre" />
+    <meta
+      name="twitter:image:alt"
+      content="Arial view of victoria falls attractions"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="stylesheet" href="styles/join-mobile.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="images/her.jpeg" alt="images/vicfalls.webp" />
+        <div>
+          <h1>The Collective</h1>
+          <p>Chamber of Commerce</p>
+          <a href="#" id="menu">≡</a>
+        </div>
+      </section>
+      <nav>
+        <a href="index.html">Home</a><a href="directory.html">Directory</a
+        ><a href="join.html" class="active">Join</a><a href="discover.html">Discover</a>
+        <!-- <a href="#">🌓</a> -->
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Join Us</h1>
+  
+        <form method="GET" action="thanks.html" class="designOne">
+          <fieldset>
+            <legend>Member Application Form</legend>
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Organizational Title <input type="text" name="title"  autocomplete="organization-title" title="Organizational title within the organization" ></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="0773657398" pattern="^{5,}a-zA-Z?$" required></label>
+            <label>Organization's Name <input type="text" name="name"  required autocomplete="organization" title="Organization's name" placeholder="Name"></label>
+            <label>Select Membership Level <select name="membership" id="membership" required>
+              <option value="non-profit" selected>Non-Profit</option>
+              <option value="bronze" >Bronze</option>
+              <option value="silver" >Silver</option>
+              <option value="gol" >Gold</option>
+            </select></label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Organization's Description</legend>
+            <label><textarea name="description" title="description"></textarea></label>
+          </fieldset>
+  
+          <label><input type="hidden" id="time" name="time" value=""></label>
+  
+          <input type="submit" value="Join Us">
+        </form>
+      </section>
+      <section id="level" class="reveal">
+        <h1>Membership Levels</h1>
+        <div class="card">
+          <p>Non-Profit Membership Level</p>
+          <button id="non-btn">More Info</button>
+        </div>
+        <div class="card">
+          <p>Bronze Membership Level</p>
+          <button id="bronze-btn">More Info</button>
+        </div>
+        <div class="card">
+          <p>Silver Membership Level</p>
+          <button id="silver-btn">More Info</button>
+        </div>
+        <div class="card">
+          <p>Gold Membership Level</p>
+          <button id="gold-btn">More Info</button>
+        </div>
+
+        <dialog id="dialog-box">
+          <div>
+            <h2 id="name"></h2>
+            <button id="close-btn">X</button>
+          </div>
+          <p id="price"></p>
+          <h3>Benefits</h3>
+          <ul id="benefits"></ul>
+        </dialog>
+      </section>
+    </main>
+    <footer>
+      <section id="address">
+        <p><strong>The Collective Chamber of Commerce</strong></p>
+        <p>10 Rue</p>
+        <p>Tafara, mail 56</p>
+        <p>info@Collectivecc.org</p>
+        <p>(222)434-5432</p>
+      </section>
+      <section id="social">
+        <a href="https://www.facebook.com/"
+          ><img
+            src="images/facebook.png"
+            alt="facebook Icon by Rakib Hassan Rahim"
+        /></a>
+        <a href="https://www.linkedin.com/in/panasheGonese1"
+          ><img
+            src="images/linkedin.png"
+            alt="linkedin Icon by Rakib Hassan Rahim"
+        /></a>
+        <a href="https://x.com/?lang=en"
+          ><img src="images/twitter.png" alt="twitter Icon by Freepik"
+        /></a>
+      </section>
+      <section id="miei">
+        <p>WDD231 Class Project</p>
+        <p>Panashe Gonese</p>
+        <p>&copy;<span id="year"></span> The Collective Chamber of Commerce</p>
+        <p id="lastmodified"></p>
+      </section>
+    </footer>
+
+    <script src="scripts/join.js" type="module"></script>
+
+  </body>
+</html>

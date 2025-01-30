@@ -1,0 +1,71 @@
+@media screen and (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #level {
+    margin: 0 5px 20px;
+  }
+
+   /* hamburger */
+   #menu {
+    display: block;
+    position: absolute;
+    top: 1px;
+    text-decoration: none;
+    right: 30px;
+  }
+
+  #menu::before {
+    content: "≡";
+    font-size: 3rem;
+    font-weight: 700;
+    padding-right: 0;
+    background-color: inherit;
+    color: var(--card-color);
+  }
+
+  #menu.show::before {
+    content: "✖";
+    font-size: 2.5rem;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header section {
+    padding: 10px 25px;
+  }
+
+  /* nav */
+  nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.5s ease-out;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav.show {
+    grid-template-rows: 1fr;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--card-color);
+  }
+
+  nav.show a {
+    display: block;
+    text-align: center;
+    color: #5e2f8c;
+    padding-bottom: 10px;
+  }
+
+  nav.show a.active {
+    color: rgb(233 206 206);
+  }
+}

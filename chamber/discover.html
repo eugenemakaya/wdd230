@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Collective Chammber of Commerce: Discover Page</title>
+    <meta
+      name="description"
+      content="Chamber Discover Page by Panashe Gonese"
+    />
+    <meta name="author" content="Panashe Gonese" />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Chamber Discover Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://github.com/PurpleCre/wdd231/blob/main/chamber/images/hero.webp" />
+    <meta
+      property="og:url"
+      content="https://purplecre.github.io/wdd231/chamber/Discover.html"
+    />
+    <!-- *** Call to Action *** -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="The Collective Chammber of Commerce Discover Page by Panashe Gonese"
+    />
+    <meta property="og:site_name" content="PurpleCre" />
+    <meta
+      name="twitter:image:alt"
+      content="Arial view of victoria falls attractions"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="styles/directory-mobile.css" />
+    <script src="scripts/discover.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="images/her.jpeg" alt="images/vicfalls.webp" />
+        <div>
+          <h1>The Collective</h1>
+          <p>Chamber of Commerce</p>
+          <a href="#" id="menu"></a>
+        </div>
+      </section>
+      <nav>
+        <a href="index.html">Home</a><a href="directory.html">Directory</a
+        ><a href="join.html">Join</a><a href="discover.html" class="active">Discover</a>
+        <!-- <a href="#">🌓</a> -->
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/hero.webp" />
+          <!-- <source media="(min-width: )" srcset=""> -->
+          <img src="images/nhero.webp" alt="Hero image" />
+        </picture>
+      </section>
+      <h2>Explore The Hidden Gems</h2>
+      <section id="discover">
+        <section id="sidebar">
+          <div>
+            <p id="welcome">bgfdfghj</p>
+            <button id="close">X</button>
+            <ul>
+              <li>More to come</li>
+            </ul>
+          </div>
+          <div>
+            <iframe title="map"
+              src="https://calendar.google.com/calendar/embed?src=en.zw%23holiday%40group.v.calendar.google.com&ctz=Africa%2FMaputo"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+          <h3>Current Weather</h3>
+          <div id="weather">
+            <p id="emo">⛅</p>
+            <div id="stuff">
+              <p>75⁰F</p>
+              <p>Partly Cloudy</p>
+              <p>High: 85⁰</p>
+              <p>Low: 52⁰</p>
+              <p>Humidity: 34%</p>
+              <p>Sunrise: 7:30am</p>
+              <p>Sunset: 9:59pm</p>
+            </div>
+          </div>
+        </section>
+        <section id="images">
+          <figure>
+            <img src="images/show1.webp" alt="A river with an Attitude" loading="lazy">
+            <figcaption>Astounddingly Beautiful sites</figcaption>
+          </figure>
+          <figure>
+            <img src="images/show2.webp" alt="A rhino chilling" loading="lazy">
+            <figcaption>Closeups With Predators</figcaption>
+          </figure>
+          <figure>
+            <img src="images/show3.webp" alt="A herd of Wilda beasts" loading="lazy">
+            <figcaption>Nature at its most Primal</figcaption>
+          </figure>
+          <figure>
+            <img src="images/show4.webp" alt="A view over a smooth flowing river" loading="lazy">
+            <figcaption>Picture Perfect Camp Grounds</figcaption>
+          </figure>
+          <figure>
+            <img src="images/show5.webp" alt="waterfall seen through vibrant foliage" loading="lazy">
+            <figcaption>Hidden Gems of Immense Magnitude</figcaption>
+          </figure>
+          <figure>
+            <img src="images/show6.webp" alt="golden sunset" loading="lazy">
+            <figcaption>Zimbabwe, A Country With An Attitude</figcaption>
+          </figure>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section id="address">
+        <p><strong>The Collective Chamber of Commerce</strong></p>
+        <p>10 Rue</p>
+        <p>Tafara, mail 56</p>
+        <p>info@Collectivecc.org</p>
+        <p>(222)434-5432</p>
+      </section>
+      <section id="social">
+        <a href="https://www.facebook.com/"
+          ><img
+            src="images/facebook.png"
+            alt="facebook Icon by Rakib Hassan Rahim"
+        /></a>
+        <a href="https://www.linkedin.com/in/panasheGonese1"
+          ><img
+            src="images/linkedin.png"
+            alt="linkedin Icon by Rakib Hassan Rahim"
+        /></a>
+        <a href="https://x.com/?lang=en"
+          ><img src="images/twitter.png" alt="twitter Icon by Freepik"
+        /></a>
+      </section>
+      <section id="miei">
+        <p>WDD231 Class Project</p>
+        <p>Panashe Gonese</p>
+        <p>&copy;<span id="year"></span> The Collective Chamber of Commerce</p>
+        <p id="lastmodified"></p>
+      </section>
+    </footer>
+  </body>
+</html>
