@@ -52,6 +52,7 @@ header p {
 
 /* header nav */
 header nav {
+  z-index: 99;
   display: flex;
   justify-content: space-around;
   background-color: #353434;
@@ -82,9 +83,11 @@ header nav a:active {
 /* main */
 #temple {
   position: relative;
+  z-index: 1;
 }
 
 #overlay {
+  z-index: 2;
   position: absolute;
   top: 10px;
   width: 100%;
