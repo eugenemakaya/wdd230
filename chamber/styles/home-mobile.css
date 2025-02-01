@@ -1,12 +1,4 @@
-@media screen and (max-width: 500px) {
-  :root {
-    --main-color: rgb(56, 0, 56);
-    --header-color: rgb(226, 226, 28);
-    --paragraph-color: rgb(192, 190, 190);
-    --button-img: linear-gradient(rgb(255, 255, 0), rgb(255, 138, 5));
-    --card-color: rgb(223, 225, 226);
-  }
-
+@media screen and (max-width: 500px) { */
   /* header */
   header p {
     text-wrap: nowrap;
