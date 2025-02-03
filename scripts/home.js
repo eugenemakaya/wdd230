@@ -63,6 +63,7 @@ async function fetchWeather() {
 }
 
 function displayWeather(data) {
+  console.log(data)
   // weather icon
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
   const image = document.createElement("img");
@@ -71,7 +72,7 @@ function displayWeather(data) {
   desc.appendChild(image);
   // weather description
   const p = document.createElement("p");
-  p.innerHTML = `${data.main.temp}&deg;C - ${data.weather[0].description}`;
+  p.innerHTML = `${data.main.temp}&deg;F - ${data.weather[0].description}`;
   desc.appendChild(p);
 }
 
