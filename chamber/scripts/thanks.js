@@ -1,3 +1,13 @@
+// DOM traversal
+const ham = document.querySelector("#menu");
+const nav = document.querySelector("nav");
+
+// responsive ham and nav
+ham.addEventListener("click", () => {
+  ham.classList.toggle("show");
+  nav.classList.toggle("show");
+});
+
 let stuff =
   "first name, last name, email, mobile number, business name, and current date timestamp ";
 

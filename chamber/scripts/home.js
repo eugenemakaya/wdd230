@@ -14,6 +14,8 @@ const set = document.querySelector("#set");
 const day1 = document.querySelector("#day1");
 const day2 = document.querySelector("#day2");
 const day3 = document.querySelector("#day3");
+const banner = document.querySelector("#banner");
+const dismiss = document.querySelector("#dismiss");
 
 // responsive ham and nav
 ham.addEventListener("click", () => {
@@ -41,6 +43,17 @@ document.querySelector(
   "#lastmodified"
 ).innerHTML = `Last modified: ${document.lastModified}`;
 
+// handle banner
+if (getWeekDay(0) !== "Monday" && getWeekDay(0) !== "Tuesday" && getWeekDay(0) !== "Wednesday") {
+  banner.classList.toggle("hide");
+  dismiss.classList.toggle("hide");
+}
+
+dismiss.addEventListener("click", () => {
+  banner.classList.toggle("hide");
+  dismiss.classList.toggle("hide");
+})
+
 // Weather api intergration
 const api = "93a9d53a9d9ee8e453d854d354de453c";
 const lat = "-17.83";
@@ -55,8 +68,6 @@ async function fetchWeather() {
     if (response.ok && response2.ok) {
       const data = await response.json();
       const data2 = await response2.json();
-      console.log(data); // testing only
-      console.log(data2);
       displayResults(data, data2);
     } else {
       throw Error(await response.text());
@@ -66,6 +77,7 @@ async function fetchWeather() {
   }
 }
 
+// get day of the week  
 function getWeekDay(mod) {
   const weekday = [
     "Sunday",
@@ -114,7 +126,6 @@ async function getMemberData(memberUrl) {
   const response = await fetch(memberUrl);
 
   const data = await response.json();
-  console.table(data);
   let members = [];
 
   // Filter members on member level
@@ -126,7 +137,6 @@ async function getMemberData(memberUrl) {
 
     while (!filteredMembers[index]) {
       index = Math.ceil(Math.random(filteredMembers.length) * 10);
-      console.log("rand ");
       let member = filteredMembers[index];
 
       while (member in members) {

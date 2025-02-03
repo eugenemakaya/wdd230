@@ -1,7 +1,7 @@
 @media screen and (max-width: 640px) {
 	:root {
-	  --primary-color: rgb(63, 1, 90);
-	  --heading-color: #c4a2a2ee;
+		--primary-color: rgb(63, 1, 90);
+		--heading-color: #ffebebee;
 	}
   
 	/* hamburger */

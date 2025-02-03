@@ -1,5 +1,6 @@
 const ham = document.querySelector("#menu");
 const nav = document.querySelector("nav");
+const desc = document.querySelector("#weather");
 
 // Dynamiclly inject current year and date last modified in html
 
@@ -39,3 +40,26 @@ numVisits++;
 
 // store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
+
+// Weather api intergration
+const api = "93a9d53a9d9ee8e453d854d354de453c";
+const lat = "-17.83";
+const lon = "31.21";
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=imperial`;
+
+async function fetchWeather() {
+  try {
+    const response = await fetch(weatherUrl);
+    if (response.ok && response2.ok) {
+      const data = await response.json();
+      console.log(data); // testing only
+      desc.innerHTML = `${data.main.temp}&deg;C} - ${data.weather[0].description}`;
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+fetchWeather();

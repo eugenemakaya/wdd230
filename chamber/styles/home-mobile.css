@@ -72,6 +72,8 @@
   #hero,
   #info,
   #buss,
+  #discover,
+  #join,
   footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -97,9 +99,20 @@
     display: none;
   }
 
+  /* discover */
+  figure img:hover {
+    transform: none;
+  }
+
+  /* join */
+  #level {
+    margin: 0 5px 20px;
+  }
+
   /* footer */
   footer {
     gap: 20px;
     place-items: first baseline;
   }
 }
+
