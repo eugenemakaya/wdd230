@@ -1,0 +1,105 @@
+/* Define the font family for the body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --primary-color: rgb(63, 1, 90);
+  --heading-color: #ffebebee;
+  --text-font: 'Roboto', sans-serif;
+}
+
+/* form start ---------------*/
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2%;
+  }
+  
+  fieldset {
+    position: relative;
+  }
+  
+  legend {
+    color: var(--heading-color);
+  }
+  
+  label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--heading-color);
+    padding-top: 0.2rem;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    display: block;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: black;
+    width: 250px;
+  }
+  
+  input:required {
+    border-left-color: #d70000;
+  }
+  input:focus {
+    border-left-color: black;
+    outline: none;
+  }
+  input:required:valid {
+    border-left-color: green;
+  }
+  
+  input[type="submit"] {
+    border: none;
+    text-align: center;
+    background-color: #3d405b;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  #rating {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2%;
+      width: 180px;
+      margin-bottom: 0;
+  }
+  
+  #rangevalue {
+    position: absolute;
+    bottom: 110px;
+    right: 20px;
+      font-size: 2rem;
+      color: var(--heading-color);
+    text-decoration: underline;
+  }
+  
+  #feedback {
+    position: absolute;
+    bottom: 48px;
+    color: red;
+    text-align: right;
+  }
+  
+  
+  /* record */
+  #record {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--heading-color);
+  }
+  
+  /* form end ---------------*/
