@@ -163,6 +163,10 @@ form {
   margin: 1rem 2%;
 }
 
+fieldset {
+  position: relative;
+}
+
 legend {
   color: var(--heading-color);
 }
@@ -185,7 +189,7 @@ input[type="email"] {
   border-left-width: 5px;
   border-left-color: #555;
   font-size: 1rem;
-  color: var(--heading-color);
+  color: black;
   width: 250px;
 }
 
@@ -212,6 +216,31 @@ input[type="submit"] {
   -webkit-appearance: none;
   appearance: none;
 }
+
+#rating {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 2%;
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+  position: absolute;
+  bottom: 110px;
+  right: 20px;
+	font-size: 2rem;
+	color: var(--heading-color);
+  text-decoration: underline;
+}
+
+#feedback {
+  position: absolute;
+  bottom: 48px;
+  color: red;
+  text-align: right;
+}
+
 
 /* record */
 #record {
