@@ -9,8 +9,8 @@ async function getLinks() {
     displayLinks(data);
 }   
 
-function displayLinks(weeks) {
-    weeks.forEach(week => {
+function displayLinks(data) {
+    data.weeks.forEach((week) => {
         let li = document.createElement("li");
         let html = `${week.week}: `
         week.links.forEach(link => {
@@ -19,6 +19,13 @@ function displayLinks(weeks) {
         li.innerHTML = html;
         list.appendChild(li);
     });
+    // for(let key in weeks[0]) {
+    //     let li = document.createElement("li");
+    //     let html = `${week.week}: `
+    //     for (let key1 in weeks[0][key]) {
+    //         console.log(json.jsonData[key][key1])
+    //     }
+    //  }
 }
 
 getLinks();

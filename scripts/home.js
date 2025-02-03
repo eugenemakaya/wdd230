@@ -43,23 +43,36 @@ localStorage.setItem("numVisits-ls", numVisits);
 
 // Weather api intergration
 const api = "93a9d53a9d9ee8e453d854d354de453c";
-const lat = "-17.83";
-const lon = "31.21";
+const lat = "-17.93";
+const lon = "25.83";
+
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=imperial`;
 
 async function fetchWeather() {
   try {
     const response = await fetch(weatherUrl);
-    if (response.ok && response2.ok) {
+    if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
-      desc.innerHTML = `${data.main.temp}&deg;C} - ${data.weather[0].description}`;
+      displayWeather(data);
     } else {
       throw Error(await response.text());
     }
   } catch (error) {
     console.log(error);
   }
+}
+
+function displayWeather(data) {
+  // weather icon
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+  const image = document.createElement("img");
+  image.src = iconsrc;
+  image.setAttribute("alt", data.weather[0].description);
+  desc.appendChild(image);
+  // weather description
+  const p = document.createElement("p");
+  p.innerHTML = `${data.main.temp}&deg;C - ${data.weather[0].description}`;
+  desc.appendChild(p);
 }
 
 fetchWeather();
