@@ -26,7 +26,7 @@ header section img {
   margin: 0;
 }
 
-header section h1 {
+header section p {
   color: var(--header-color);
   margin: 0;
   padding: 0;
@@ -37,6 +37,7 @@ header section p {
   color: var(--header-color);
   margin: 0;
   padding: 0;
+  font-size: 30px;
 }
 
 /* nav */
@@ -73,6 +74,11 @@ nav a:hover {
 main {
   width: 90%;
   margin: 0 auto;
+}
+
+h1 {
+  color: #3d405b;
+  text-align: left;
 }
 
 #hero img {
@@ -351,11 +357,6 @@ figure img:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-h1 {
-  color: #3d405b;
-  text-align: center;
-}
-
 form {
   margin: 1rem 2%;
   display: grid;
@@ -428,8 +429,13 @@ input:-webkit-autofill {
 }
 
 /* Membership levels */
+
 #level {
   margin-top: 10px;
+}
+
+#level h2 {
+  text-align: center;
 }
 
 .card {

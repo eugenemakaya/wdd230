@@ -1,7 +1,8 @@
 @media screen and (max-width: 500px) {
   /* header */
-  header h1 {
+  header section p {
     text-wrap: nowrap;
+    font-size: 25px;
   }
 
   /* hamburger */
