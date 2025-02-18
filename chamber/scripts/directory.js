@@ -36,7 +36,6 @@ async function getMemberData(url) {
   const response = await fetch(url);
 
   const data = await response.json();
-  console.table(data);
   cardsMembers(data);
 }
 

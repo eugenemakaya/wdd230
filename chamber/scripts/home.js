@@ -140,7 +140,6 @@ async function getMemberData(memberUrl) {
 
       while (member in members) {
         index = Math.ceil(Math.random() * 10);
-        console.log("rand 2");
       }
     }
 

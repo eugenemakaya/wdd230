@@ -22,7 +22,6 @@ document.querySelector(
 ).innerHTML = `Last modified: ${document.lastModified}`;
 
 const formData = currentUrl.split("?")[1].split("&");
-console.log(formData);
 
 function show(query) {
   formData.forEach((el) => {

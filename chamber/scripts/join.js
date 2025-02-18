@@ -32,7 +32,6 @@ document.querySelector(
 window.addEventListener("load", (e) => {
   level.classList.remove("reveal")
   getDateAndTime();
-  console.log("here!!!!");
 });
 
 non.addEventListener("click", () => {
