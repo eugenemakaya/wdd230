@@ -51,6 +51,48 @@ main {
     color: rgb(51, 100, 100);
   }
   
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.wireframe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wireframe img {
+  flex: 1 1 calc(33.333% - 1rem);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.wireframe h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.wireframe p {
+  text-align: center;
+  width: 100%;
+}
+
+.wireframe a {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: darkslategray;
+  width: 100%;
+}
+
+.wireframe a:hover {
+  color: darkslategray;
+}
+
 footer {
     background: darkslategrey;
     padding: 2rem;
